@@ -13,38 +13,4 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid justify-content-between">
-        <div class="navbar-collapse">
-          <ul class="navbar-nav">
-            <li class="nav-item nav-link"><a class="nav-link" href="{$BASE_URL}home">Home</a></li>
-            <li class="nav-item nav-link"><a class="nav-link" href="{$BASE_URL}paises">Paises</a></li>
-            <li class="nav-item nav-link"><a class="nav-link" href="{$BASE_URL}jugadores">Jugadores</a></li>
-          </ul>
-        </div>
-        <div class="navbar-collapse justify-content-end">
-          <ul class="navbar-nav">
-            {if $logueado == false}
-              <li class="nav-item">
-                <button class="btn btn-sm btn-outline-secondary" type="button">
-                  <a class="nav-link" href="{$BASE_URL}login">Log in</a>
-                </button>
-              </li>
-            {else}
-              <li class="nav-item">
-                <div class="navbar-collapse justify-content-between">
-                  <span class="spinner-grow text-success spinner-grow-sm"></span>
-                  <span class="nav-link">En línea: {$usuario|default: ''}</span>
-                  <button class="btn btn-sm btn-outline-secondary" type="button">
-                    <a class="nav-link" href="{$BASE_URL}logout">Log out</a>
-                  </button>
-                </div>
-              </li>
-            {/if}
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
-</header>
+  
